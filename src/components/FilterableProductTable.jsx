@@ -7,7 +7,7 @@ const FilterableProductTable = () => {
   const [inStockOnly, setInStockOnly] = useState(false);
 
   const handleFilterTextChange = (useInput) => {
-    setFilterText(useInput.toLowerCase());
+    setFilterText(useInput);
     console.log(useInput)
   };
 
