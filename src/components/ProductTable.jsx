@@ -8,7 +8,7 @@ const ProductTable = ({ products, filterText, inStockOnly }) => {
   //The difference between let and const is that const you can only assign a value to a variable once
   //But let allows you to reassign after it has been assigned.
   products.forEach((product) => {
-    if (product.name.indexOf(filterText) === -1) {
+    if (product.name.indexOf(filterText.toLowerCase()) === -1) {
       return;
     }
     //indexOf() method: if value not found,indexOf() method returns -1
